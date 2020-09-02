@@ -1,0 +1,1 @@
+Template for React with TypeScript and Sass.
