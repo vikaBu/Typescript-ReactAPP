@@ -2,7 +2,6 @@ import React from 'react'
 import { BrowserRouter as Router, Switch, Route, Link, useParams } from 'react-router-dom';
 import { useState, useEffect, ChangeEvent, } from "react";
 import { Book } from './Book';
-import './Book.scss';
 
 interface BookItem {
     title: string;

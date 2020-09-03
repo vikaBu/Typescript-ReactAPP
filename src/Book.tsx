@@ -66,9 +66,9 @@ export function SearchResults(props:SearchResultsProps) {
         <section>
         <h2>List of Books</h2>
         <ul>
-            <li>
+
             {bookList}
-            </li>
+    
         </ul>
         </section>
     )
