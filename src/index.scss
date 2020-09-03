@@ -23,7 +23,8 @@ ul {
 
 
 li a {
-  display: block;
+  display: inline;
+
   color:black;
   text-align: center;
   padding: 14px 16px;
@@ -31,7 +32,4 @@ li a {
 }
 li a:hover {
   background-color:teal;
-}
-li {
-  float: left;
 }

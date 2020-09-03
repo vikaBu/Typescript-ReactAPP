@@ -1,7 +1,8 @@
 import React from 'react';
 import {BrowserRouter as Router, Switch, Route, Link, useParams} from 'react-router-dom';
 import './App.scss';
-import {BooksPage} from './Book'
+import {BooksPage} from './Book';
+import {BookIdPage} from './BookManagePage';
 
 function App() {
   return (
@@ -52,10 +53,6 @@ function MembersPage() {
   return <h2>Members</h2>;
 }
 
-function BookIdPage() {
-  let { id } = useParams();
-return <h2>Books id: {id}</h2>;
-}
 function MembersIdPage() {
   let { id } = useParams();
 return <h2>Member id:  {id}</h2>;
