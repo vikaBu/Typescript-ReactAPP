@@ -48,12 +48,12 @@ export const Book = ({book}: BookProps ) => {
     return <li> <a href ={`http://localhost:3000/books/${book.id}`}>{book.author},{book.title} </a></li>
 
 }
-
 interface SearchResultsProps{
     books: Book [];
 };
 
-function SearchResults(props:SearchResultsProps) {
+
+export function SearchResults(props:SearchResultsProps) {
     const bookList = props.books.map((book) =>{
         return <Book book ={book}></Book>
     })
@@ -66,8 +66,11 @@ function SearchResults(props:SearchResultsProps) {
         <section>
         <h2>List of Books</h2>
         <ul>
+            <li>
             {bookList}
+            </li>
         </ul>
         </section>
     )
 }
+
