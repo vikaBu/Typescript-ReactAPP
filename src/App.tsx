@@ -3,7 +3,7 @@ import { BrowserRouter as Router, Switch, Route, Link, useParams } from 'react-r
 import './App.scss';
 import { BooksPage } from './Book';
 import { BookIdPage } from './BookManagePage';
-import {AddBookPage} from './addBook'
+import {AddBook} from './addBook'
 
 function App() {
   return (
@@ -42,7 +42,7 @@ function App() {
             <BookIdPage />
           </Route>
           <Route exact path ='/add/add-book'>
-            <AddBookPage />
+            <AddBook />
           </Route>
           <Route path='/members/:id'>
             <MembersIdPage />

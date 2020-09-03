@@ -1,7 +1,6 @@
 import React from 'react'
-import { BrowserRouter as Router, Switch, Route, Link, useParams } from 'react-router-dom';
-import { useState, useEffect, ChangeEvent, } from "react";
-import { Book } from './Book';
+import { useParams } from 'react-router-dom';
+import { useState, useEffect } from "react";
 
 interface BookItem {
     title: string;
@@ -18,15 +17,14 @@ export function BookIdPage() {
         fetch(`http://localhost:3001/books/${id}`)
             .then(response => response.json())
             .then(json => setItem(json.book))
-    }, [])
-
-
+    })
     let { id } = useParams();
     return <section> 
+        <a href= "/add/add-book"> Add Book</a>
         <h2>Books id: {id}</h2>
         <h1>Title :{item.title}</h1>
         <h3>Author :{item.author}</h3>
-        <h4><img src={item.cover_image_url} alt="Book cover"/></h4>
+        <h3><img src={item.cover_image_url} alt="Book cover"/></h3>
         <h3>ISBN :{item.isbn}</h3>
         <h3>Published :{item.published_date}</h3>
          </section>

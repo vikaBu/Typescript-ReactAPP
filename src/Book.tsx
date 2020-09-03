@@ -65,10 +65,10 @@ export function SearchResults(props:SearchResultsProps) {
     return(
         <section>
         <h2>List of Books</h2>
-        <ul>
+        <a href ={"http://localhost:3000/add/add-book"}> Add Books</a>
 
+        <ul>
             {bookList}
-    
         </ul>
         </section>
     )
